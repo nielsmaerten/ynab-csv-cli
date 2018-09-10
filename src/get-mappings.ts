@@ -1,7 +1,8 @@
 import * as path from "path";
 
 export default (filePath: string) => {
-  const mappings = require("./mappings.js");
+  let mappingsFile = "./mappings.js";
+  const mappings = require(mappingsFile);
   const fileName = path.basename(filePath);
 
   for (const regex in mappings) {

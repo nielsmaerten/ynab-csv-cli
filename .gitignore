@@ -1,5 +1,7 @@
-# Built js files
+# Custom exclusions
 *.js
+dist/*
+.cache/*
 
 # Created by https://www.gitignore.io/api/node,macos,windows,visualstudio
 
