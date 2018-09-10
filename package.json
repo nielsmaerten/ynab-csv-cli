@@ -1,0 +1,57 @@
+{
+  "name": "ynab-csv-cli",
+  "version": "0.0.0-ALPHA",
+  "description": "CLI for parsing your bank's CSV files to YNAB format",
+  "keywords": [
+    "ynab",
+    "csv",
+    "parse",
+    "convert"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc"
+  },
+  "author": "Niels Maerten",
+  "license": "MIT",
+  "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,json,css,md,ts}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "papaparse": "^4.6.0",
+    "typescript": "^3.0.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.2",
+    "@types/node": "^10.9.4",
+    "@types/papaparse": "^4.5.3",
+    "husky": "^1.0.0-rc.13",
+    "jest": "^23.6.0",
+    "lint-staged": "^7.2.2",
+    "prettier": "^1.14.2",
+    "ts-jest": "^23.1.4"
+  }
+}
