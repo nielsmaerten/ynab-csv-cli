@@ -9,8 +9,11 @@
     "convert"
   ],
   "main": "dist/index.js",
+  "files": [
+    "dist/**/*"
+  ],
   "scripts": {
-    "postinstall": "npm run build:js",
+    "prepublish": "npm run build:js",
     "test": "jest",
     "build:js": "parcel build src/index.ts --target node && cp mappings.js dist/mappings.js",
     "build:bin": "npm run build:js && pkg dist/index.js --target win,linux,macos --output bin/ynab-csv-cli && cp mappings.js bin/mappings.js"
