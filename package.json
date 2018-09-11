@@ -1,6 +1,6 @@
 {
   "name": "ynab-csv-cli",
-  "version": "1.0.0-BETA",
+  "version": "1.1.0-BETA",
   "description": "CLI for parsing your bank's CSV files to YNAB format",
   "keywords": [
     "ynab",
