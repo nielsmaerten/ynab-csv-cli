@@ -1,3 +1,5 @@
 import convertCsv from "./convert-csv";
 
-convertCsv(process.argv[2], process.argv[3], process.argv[4]);
+process.argv.shift();
+process.argv.shift();
+convertCsv(...process.argv);
