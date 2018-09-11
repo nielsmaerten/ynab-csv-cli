@@ -11,6 +11,10 @@ YNAB-CSV-CLI turns this idea into a stand-alone executable.
 You define the mappings for your bank's files once,  
 then just drop files onto the tool and have them converted automatically.
 
+## Demo
+
+![Demo](demo.gif)
+
 ## How to use
 
 1. [Download](https://github.com/nielsmaerten/ynab-csv-cli/releases) the tool for your OS and the `mappings.js` file to a folder
