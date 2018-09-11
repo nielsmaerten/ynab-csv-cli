@@ -11,8 +11,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "build:js": "parcel build src/index.ts --target node && cp src/mappings.js dist/mappings.js",
-    "build:bin": "npm run build:js && pkg dist/index.js --target win,linux,macos --output bin/ynab-csv-cli && cp src/mappings.js bin/mappings.js"
+    "build:js": "parcel build src/index.ts --target node && cp mappings.js dist/mappings.js",
+    "build:bin": "npm run build:js && pkg dist/index.js --target win,linux,macos --output bin/ynab-csv-cli && cp mappings.js bin/mappings.js"
   },
   "author": "Niels Maerten",
   "license": "MIT",
