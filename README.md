@@ -1,4 +1,4 @@
-# YNAB-CSV-CLI
+# YNAB CSV Converter - Win/Mac/Linux
 
 **A simple drag-and-drop tool to convert your bank's CSV statements into YNAB format.**
 
